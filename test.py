@@ -55,23 +55,47 @@ def Producto(ist) :
     return result  
    
    
+   
+def separar(string): 
+  
+    list_string = string.split(' ') 
+    return list_string 
+  
+def juntar(list_string): 
+  
+    string = '-'.join(list_string) 
+    return string 
+  
+   
 
 if __name__ == "__main__":
 
-    list1 = [1, 22, 3]  
-    list2 = [31, 2, 44] 
+    list1 = [1, 212, 23]  
+    list2 = [31, 22, 44] 
     print(Producto(list1)) 
     print(Producto(list2)) 
     
     
     #Maybe improve others
-    is_prime(113)
-    is_prime(112)
+    is_prime(1133)
+    is_prime(1124)
     is_prime(111)
     
     
     
-    list1 = [108, -217, 64, -455, 646, -933, 12] 
+    list1 = [1048, -217, 64, -455, 646, -933, 12,1] 
     p,s=pos_or_neg(list1)
     print("Positive numbers in the list: ", p) 
     print("Negative numbers in the list: ", s) 
+    
+    
+    
+    s = 'Solo una prueba'
+      
+    # Splitting a string 
+    list_string = separar(s) 
+    print(list_string) 
+  
+     # Join list of strings into one 
+    s2 = juntar(list_string) 
+    print(s2) 
