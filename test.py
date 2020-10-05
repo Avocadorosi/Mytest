@@ -31,6 +31,21 @@ def is_prime(num):
 
 
 
+  
+def pos_or_neg(list1):
+    neg_count , pos_count = 0,0
+    for num in list1: 
+          
+        # checking condition 
+        if num >= 0: 
+            pos_count += 1
+      
+        else: 
+            neg_count += 1
+    return pos_count, neg_count
+        
+
+
 def Producto(ist) : 
       
     # Multiply elements one by one 
@@ -40,14 +55,23 @@ def Producto(ist) :
     return result  
    
    
-# Driver code 
-list1 = [1, 22, 3]  
-list2 = [31, 2, 44] 
-print(Producto(list1)) 
-print(Producto(list2)) 
 
+if __name__ == "__main__":
 
-#Maybe improve others
-is_prime(113)
-is_prime(112)
-is_prime(111)
+    list1 = [1, 22, 3]  
+    list2 = [31, 2, 44] 
+    print(Producto(list1)) 
+    print(Producto(list2)) 
+    
+    
+    #Maybe improve others
+    is_prime(113)
+    is_prime(112)
+    is_prime(111)
+    
+    
+    
+    list1 = [108, -217, 64, -455, 646, -933, 12] 
+    p,s=pos_or_neg(list1)
+    print("Positive numbers in the list: ", p) 
+    print("Negative numbers in the list: ", s) 
